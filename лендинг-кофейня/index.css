@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sen:wght@400..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+    background-color: #fae9d9;
+}
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #46312d;
+    color: #fdfcfb;
+    padding: 0 80px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fdfcfb;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    will-change: transform;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #fae9d9;
+    transform: scale(1.1);
+} 
+
+.main {
+    margin-top: 10%;
+    /* padding: 0 80px; */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #47312f;
+}
+
+.hero h4 {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #47312f;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero button {
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #b86e3b;
+    color: #fdfcfb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #a15c2e;
+    transform: scale(1.05);
+}
+
+.hero img {
+    margin-left: auto;
+    margin-top: -10%;
+}
+
+.hero2 {
+    background-color: #faefe7;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-block {
+    padding: 0 200px;
+}
+
+.hero2 h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #46312d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.about-block hr {
+    width: 200px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d7ac8c, transparent);
+    filter: blur(0.5px);
+}
+
+.hero2 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #46312d;
+    font-weight: 400;
+    padding: 0 400px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #46312d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.menu hr {
+    width: 210px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d7ac8c, transparent);
+    filter: blur(0.5px);
+}
+
+.menu .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.menu .cards .card {
+    background-color: #fefcfa;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu .cards .card h4 {
+    font-family: "Poppins", sans-serif;
+    color: #46312d;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.menu .cards .card hr {
+    height: 1px;
+}
+
+.menu .cards .card p {
+    font-family: "Montserrat", sans-serif;
+    color: #46312d;
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.menu .cards .card button {
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #b86e3b;
+    color: #fdfcfb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.menu .cards .card button:hover {
+    background-color: #a15c2e;
+    transform: scale(1.05);
+}
+
+.advantages {
+    background-color: #faefe7;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.advantages h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #46312d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.advantages hr {
+    width: 210px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d7ac8c, transparent);
+    filter: blur(0.5px);
+}
+
+.advantages ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.advantages ul li {
+    font-family: "Montserrat", sans-serif;
+    color: #46312d;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.reviews {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reviews h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #46312d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.reviews hr {
+    width: 210px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d7ac8c, transparent);
+    filter: blur(0.5px);
+}
+
+.reviews .review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.reviews .review-cards .review-card {
+    background-color: #fefbf8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.reviews .review-cards .review-card .h2-top {
+    font-family: "Playfair Display", serif;
+    color: #46312d;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0px 10px;
+    margin: 0;
+}
+
+.reviews .review-cards .review-card .h2-bottom {
+    font-family: "Playfair Display", serif;
+    color: #46312d;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+    padding: 0px 10px;
+    margin: 20px 0 0 0;
+}
+
+.reviews .review-cards .review-card h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #46312d;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.reviews .review-cards .review-card p {
+    font-family: "Playfair Display", serif;
+    color: #46312d;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.contacts {
+    background-color: #faefe7;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: #46312d;
+}
+
+.contacts h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #46312d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.contacts hr {
+    width: 210px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d7ac8c, transparent);
+    filter: blur(0.5px);
+    margin-bottom: 0;
+}
+
+.contacts h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #46312d;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.contacts p {
+    font-family: "Montserrat", sans-serif;
+    color: #46312d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;;
+    background-color: #46312d;
+    color: #faefe7;
+    text-align: center;
+    padding: 10px;
+}
